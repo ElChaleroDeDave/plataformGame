@@ -42,3 +42,8 @@ func _physics_process(delta):
 			motion.x = lerp(motion.x,0,0.01)
 			
 	motion = move_and_slide(motion, up)
+	
+func add_Coin():
+	var canvasLayer = get_tree().get_root().find_node("CanvasLayer",true,false);
+	
+	canvasLayer.handleCoinCollected()

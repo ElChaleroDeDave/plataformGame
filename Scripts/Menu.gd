@@ -1,0 +1,13 @@
+extends Control
+
+func ready():
+	$VBoxContainer/StartGameButton.grab_focus()
+
+func _on_StartGameButton_pressed():
+	
+	get_tree().change_scene("res://Scenes/World.tscn")
+	
+func _on_QuitButton_pressed():
+	
+	get_tree().quit()
+	

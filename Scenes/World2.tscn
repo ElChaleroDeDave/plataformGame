@@ -586,7 +586,7 @@ corner_radius_bottom_left = 15
 [sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 176.25, 16.75 )
 
-[node name="World" type="Node2D"]
+[node name="World2" type="Node2D"]
 
 [node name="Sky" type="Sprite" parent="."]
 position = Vector2( 3, -73 )
@@ -623,18 +623,18 @@ scale = Vector2( 1.05078, 1 )
 texture = ExtResource( 4 )
 
 [node name="Crate" type="Sprite" parent="."]
-position = Vector2( -111, -10 )
+position = Vector2( -14, -8 )
 texture = ExtResource( 9 )
 
 [node name="Sign" type="Sprite" parent="."]
-position = Vector2( 69, -17 )
+position = Vector2( -91, -17 )
 texture = ExtResource( 6 )
 
 [node name="Coin2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 52, -14 )
+position = Vector2( -105, -10 )
 
 [node name="Coin" parent="." instance=ExtResource( 10 )]
-position = Vector2( -48, -13 )
+position = Vector2( 86, -11 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 follow_viewport_enable = true
@@ -674,6 +674,6 @@ position = Vector2( 7, 56.25 )
 shape = SubResource( 17 )
 
 [node name="Coin3" parent="." instance=ExtResource( 10 )]
-position = Vector2( -93, -11 )
+position = Vector2( 33, -12 )
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
